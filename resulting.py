@@ -26,8 +26,10 @@ def tab1():
         formatters={'@date_time':'datetime'}
     ))
 
-    mytext = Label(x=20, y=-59, x_units='screen', text=f"Source of data: latimes-state-totals.csv \n "
-                                                        f"Date of last update: {max_date}",
+    mytext = Label(x=20, y=-59, x_units='screen', text=f"Source of data: coming from a continual Times survey of California's 58 county health\n "
+                                                           " agencies and three city agencieas, pubished on https://www.latimes.com/projects/california-coronavirus-cases-tracking-outbreak/"
+                                                           " , access from Github repository https://github.com/datadesk/california-coronavirus-data/blob/master/latimes-state-totals.csv"
+                                                           f"  Date of last update: 2020-11-04",
     render_mode='css',y_units='screen',
       border_line_color='black', border_line_alpha=1.0,
       background_fill_color='white', background_fill_alpha=1.0,)
@@ -64,8 +66,10 @@ def tab2():
         p.legend.location = "top_left"
         p.legend.orientation = "horizontal"
         p.xgrid.grid_line_color = None
-        mytext = Label(x=20, y=-150, x_units='screen', text=f"Source of data: cdph-race-ethnicity.csv \n "
-                                                           f"Date of last update: {max_date}",
+        mytext = Label(x=20, y=-150, x_units='screen', text=f"Source of data: coming from a continual Times survey of California's 58 county health\n "
+                                                           " agencies and three city agencieas, pubished on https://www.latimes.com/projects/california-coronavirus-cases-tracking-outbreak/"
+                                                           " , access from Github repository https://github.com/datadesk/california-coronavirus-data/blob/master/cdph-race-ethnicity.csv"
+                                                           f"  Date of last update: 2020-11-04",
                        render_mode='css', y_units='screen',
                        border_line_color='black', border_line_alpha=1.0,
                        background_fill_color='white', background_fill_alpha=1.0, )
@@ -116,8 +120,10 @@ def tab3():
         p.legend.location = "top_left"
         p.legend.orientation = "horizontal"
         p.xgrid.grid_line_color = None
-        mytext = Label(x=20,y=-150, x_units='screen', text=f"Source of data: cdph-race-ethnicity.csv \n "
-                                                           f"Date of last update: {max_date}",
+        mytext = Label(x=20,y=-150, x_units='screen', text=f"Source of data: coming from a continual Times survey of California's 58 county health\n "
+                                                           " agencies and three city agencieas, pubished on https://www.latimes.com/projects/california-coronavirus-cases-tracking-outbreak/"
+                                                           " , access from Github repository https://github.com/datadesk/california-coronavirus-data/blob/master/cdph-race-ethnicity.csv"
+                                                           f"  Date of last update: 2020-11-04",
                        render_mode='css', y_units='screen',
                        border_line_color='black', border_line_alpha=1.0,
                        background_fill_color='white', background_fill_alpha=1.0, )
