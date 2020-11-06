@@ -20,8 +20,8 @@ def tab1():
     r = p.line('date_time','new_confirmed_cases',source=data)
     p.add_tools(HoverTool(
         tooltips=[
-            ('date',"@date_time{%Y-%m-%d}"),
-            ('new cases', "@new_confirmed_cases")
+            ('Date',"@date_time{%Y-%m-%d}"),
+            ('New cases', "@new_confirmed_cases")
         ],
         formatters={'@date_time':'datetime'}
     ))
@@ -66,6 +66,12 @@ def tab2():
         p.legend.location = "top_left"
         p.legend.orientation = "horizontal"
         p.xgrid.grid_line_color = None
+        p.add_tools(HoverTool(
+            tooltips=[
+                ('Race, category', "@x"),
+                ('Percentage', "@counts")
+            ],
+        ))
         mytext = Label(x=20, y=-150, x_units='screen', text=f"Source of data: coming from a continual Times survey of California's 58 county health\n "
                                                            " agencies and three city agencieas, pubished on https://www.latimes.com/projects/california-coronavirus-cases-tracking-outbreak/"
                                                            " , access from Github repository https://github.com/datadesk/california-coronavirus-data/blob/master/cdph-race-ethnicity.csv"
@@ -120,6 +126,12 @@ def tab3():
         p.legend.location = "top_left"
         p.legend.orientation = "horizontal"
         p.xgrid.grid_line_color = None
+        p.add_tools(HoverTool(
+            tooltips=[
+                ('Race, category', "@x"),
+                ('Percentage', "@counts")
+            ],
+        ))
         mytext = Label(x=20,y=-150, x_units='screen', text=f"Source of data: coming from a continual Times survey of California's 58 county health\n "
                                                            " agencies and three city agencieas, pubished on https://www.latimes.com/projects/california-coronavirus-cases-tracking-outbreak/"
                                                            " , access from Github repository https://github.com/datadesk/california-coronavirus-data/blob/master/cdph-race-ethnicity.csv"
