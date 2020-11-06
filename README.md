@@ -491,3 +491,65 @@ This survey is conducted by The Times' Data and Graphics Department. If you'd li
 ## Contact
 
 To inquire about the data or about reuse, please contact Data and Graphics Editor [Ben Welsh](https://palewi.re/who-is-ben-welsh/) at [ben.welsh@latimes.com](mailto:ben.welsh@latimes.com)
+
+## How can you run the visualization
+
+1. Install virtualenv package on your computer by running the command line below:
+ 
+      ```pip install virtualenv```
+ 
+2. Copy the url of repository and clone it by running the command line below:
+  
+      ```git clone https://github.com/liling10822/california-coronavirus-data.git```
+  
+3. Running ```cd california-coronavirus-data```  to go to the folder that you cloned
+ 
+4. Create a blank virtual environment called env by running the command line below:
+ 
+     For macOS and Linux: ```python3 -m venv env```
+   
+     For Windows: ```py -m venv env```
+5. Activate the dsci560H4 enviornment by running the command line below:
+
+     For macOS and Linux: ```source env/bin/activate```
+   
+     For Windows: ```.\env\Script\activate```
+6. Install dependencies by running the command line below:
+
+    ````pip install -r requirements.txt````
+    
+   Otherwise, running the command line below to manually install the packages that will be needed:
+    ````
+    pip install numpy
+    pip install pandas
+    pip install bokeh
+    ````
+    After installing, run ```pip freeze``` in env environment to list all the packages in the environment (which shows empty before installing the packages), it should be like below:
+    ```
+    bokeh==2.2.3
+    Jinja2==2.11.2
+    MarkupSafe==1.1.1
+    numpy==1.19.4
+    packaging==20.4
+    palette==0.2
+    pandas==1.1.4
+    Pillow==8.0.1
+    pyparsing==2.4.7
+    python-dateutil==2.8.1
+    pytz==2020.4
+    PyYAML==5.3.1
+    six==1.15.0
+    tornado==6.1
+    typing-extensions==3.7.4.3
+
+    ```
+## Launch visualization by bokeh serve
+* Excuting the commmand line below to lauch bokeh serve and get the visualization:
+
+    ```
+    bokeh serve --show visualization_corona_data.py 
+    ```
+    
+ ## Launch visualization by Docker
+ 1.
+
