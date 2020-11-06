@@ -492,8 +492,8 @@ This survey is conducted by The Times' Data and Graphics Department. If you'd li
 
 To inquire about the data or about reuse, please contact Data and Graphics Editor [Ben Welsh](https://palewi.re/who-is-ben-welsh/) at [ben.welsh@latimes.com](mailto:ben.welsh@latimes.com)
 
-## How can you run the visualization
-
+# How can you run the visualization
+## Install virtual environment
 1. Install virtualenv package on your computer by running the command line below:
  
       ```pip install virtualenv```
@@ -544,6 +544,9 @@ To inquire about the data or about reuse, please contact Data and Graphics Edito
 
     ```
 ## Launch visualization by bokeh serve
+
+After installing the virtual environment, the bokeh serve can be run on your computer
+
 * Excuting the commmand line below to lauch bokeh serve and get the visualization:
 
     ```
