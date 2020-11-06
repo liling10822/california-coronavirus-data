@@ -4,4 +4,4 @@ RUN pip install -r requirements.txt
 ADD visualization_corona_data.py /
 ADD latimes-state-totals.csv /
 ADD cdph-race-ethnicity.csv /
-CMD ["bokeh","serve","-show", "visualization_corona_data.py"]
+CMD ["bokeh","serve","--show", "visualization_corona_data.py"]
